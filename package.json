@@ -1,0 +1,25 @@
+{
+  "name": "workout_to_the_beat",
+  "version": "1.0.0",
+  "description": "exercise with tempo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdowdy70/workout_to_the_beat.git"
+  },
+  "author": "Sherrie and Chris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdowdy70/workout_to_the_beat/issues"
+  },
+  "homepage": "https://github.com/sdowdy70/workout_to_the_beat#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemon": "^1.17.1",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-rc.4"
+  }
+}
