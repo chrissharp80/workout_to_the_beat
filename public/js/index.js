@@ -18,5 +18,5 @@ function getMessage() {
 }
 
 $(document).ready(function() {
-	setInterval(getMessage, 1000);
+	// setInterval(getMessage, 1000);
 });

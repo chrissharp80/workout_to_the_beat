@@ -1,3 +1,15 @@
 .space-before-elements {
-    margin-left: 10px;
+    margin-left: 5px;
+}
+
+.space-after-elements {
+    margin-right: 5px;
+}
+
+.space-under-elements {
+     margin-bottom: 5px;
+ }
+
+.space-above-elements {
+    margin-top: 5px;
 }

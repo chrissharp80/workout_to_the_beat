@@ -8,50 +8,52 @@ block content
 		.container
 			.row
 				.col-md-5
-					h1 Get your ass in gear!!!
+					h1 Get your butt in gear!!!
 					p
-						| Make your playlist and get busy. Burn off those 
+						| Make your playlist and get busy. Burn off those
 						| calories while listening to a custom playlist!!
-					p
+					p.space-under-elements
 						form(action='/setup')
 							.form-group
 								label(for='workout') How long do you want to workout?
-								select#workout.form-control-input-sm
+								br
+								select#workout.form-control-input-sm.space-under-elements
 									option 15 min
 									option 30 min
 									option 45 min
 									option 60 min
 							.form-group
 								label(for='warmup') How long is your warm-up?
-								select#warmup.form-control-input-sm
+								br
+								select#warmup.form-control-input-sm.space-under-elements
 									option 5 min
 									option 10 min
 									option 15 min
 									option 20 min
 							.form-group
-								label(for='inputFile') Upload your music file
+								label(for='inputFile') Upload your music file:
 								input.form-control-file(type='file')
-							button.btn.btn-default(type='submit') Submit			
+							button.btn.btn-default.space-above-elements(type='submit') Submit
 				.col-md-7
 					img(src='images/cassette.jpg', alt-'cassette')
 	.row
 		.col-md-4
 			.card.bg-light.p-3
 				h4 Lorem ipsum dolor
-				|         
+				|
 				p
 					| Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi, aperiam reprehenderit sunt deleniti nostrum totam libero nobis mollitia dignissimos.
-		|     
+		|
 		.col-md-4
 			.card.bg-light.p-3
 				h4 Lorem ipsum dolor
-				|         
+				|
 				p
 					| Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi, aperiam reprehenderit sunt deleniti nostrum totam libero nobis mollitia dignissimos.
-		|     
+		|
 		.col-md-4
 			.card.bg-light.p-3
 				h4 Lorem ipsum dolor
-				|         
+				|
 				p
 					| Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi, aperiam reprehenderit sunt deleniti nostrum totam libero nobis mollitia dignissimos.
