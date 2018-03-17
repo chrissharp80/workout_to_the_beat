@@ -13,8 +13,25 @@ block content
 						| Make your playlist and get busy. Burn off those 
 						| calories while listening to a custom playlist!!
 					p
-						<input id='choose-file' type='file'>
-						//a.btn.btn-primary.btn-lg(href='#') Setup Wizard																					
+						form(action='/setup')
+							.form-group
+								label(for='workout') How long do you want to workout?
+								select#workout.form-control-input-sm
+									option 15 min
+									option 30 min
+									option 45 min
+									option 60 min
+							.form-group
+								label(for='warmup') How long is your warm-up?
+								select#warmup.form-control-input-sm
+									option 5 min
+									option 10 min
+									option 15 min
+									option 20 min
+							.form-group
+								label(for='inputFile') Upload your music file
+								input.form-control-file(type='file')
+							button.btn.btn-default(type='submit') Submit			
 				.col-md-7
 					img(src='images/cassette.jpg', alt-'cassette')
 	.row
