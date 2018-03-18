@@ -1,3 +1,7 @@
+.main-nav-menu li:hover {
+    cursor: pointer;
+}
+
 .space-before-elements {
     margin-left: 5px;
 }

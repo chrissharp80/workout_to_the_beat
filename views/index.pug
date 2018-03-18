@@ -1,59 +1,40 @@
-extends layout
-
-block head_extension
+doctype html
+html
+	head
+		meta(charset='utf8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, shrink-to-fit=no, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+		title Mixtape 1.0
+		// bootstrap
+		link(rel='stylesheet' href='/css/common/bootstrap.min.css')
+		// custom css
+		link(rel='stylesheet' href='/css/common/styles.css')
+		// jQuery
+		script(src='/js/common/jquery.min.js')
+		// clientside scripts
 		script(src='/js/index.js')
+	body
+		nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top
+			.container
+				a.navbar-brand(href='#') Mixtape
+				|
+				#navbarsExampleDefault.collapse.navbar-collapse
+					ul.main-nav-menu.navbar-nav.mr-auto
+						li.nav-item.active#homeNav
+							a#homeButton.btn.nav-link Home
+						li.nav-item#playlistsNav
+							a#playlistsButton.btn.nav-link Playlists
+						li.nav-item#supportNav
+							a#supportButton.btn.nav-link Support
+						li.nav-item#contactNav
+							a#contactButton.btn.nav-link Contact
+		br
+		br
+		br
+		.container#main
 
-block content
-	.jumbotron
+		// footer
 		.container
-			.row
-				.col-md-5
-					h1 Get your butt in gear!!!
-					p
-						| Make your playlist and get busy. Burn off those
-						| calories while listening to a custom playlist!!
-					p.space-under-elements
-						form(action="#")
-							.form-group
-								label(for='workout') How long do you want to workout?
-								br
-								select#workout.form-control-input-sm.space-under-elements
-									option 15 min
-									option 30 min
-									option 45 min
-									option 60 min
-							.form-group
-								label(for='warmup') How long is your warm-up?
-								br
-								select#warmup.form-control-input-sm.space-under-elements
-									option 5 min
-									option 10 min
-									option 15 min
-									option 20 min
-							.form-group
-								label(for='inputFile') Upload your music file:
-								input#inputFile.form-control-file(type='file')
-							button#submitInfoForm.btn.btn-default.space-above-elements(type='submit') Submit
-				.col-md-7
-					img(src='images/cassette.jpg', alt='cassette')
-	.row
-		.col-md-4
-			.card.bg-light.p-3
-				h4 Lorem ipsum dolor
-				|
-				p
-					| Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi, aperiam reprehenderit sunt deleniti nostrum totam libero nobis mollitia dignissimos.
-		|
-		.col-md-4
-			.card.bg-light.p-3
-				h4 Lorem ipsum dolor
-				|
-				p
-					| Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi, aperiam reprehenderit sunt deleniti nostrum totam libero nobis mollitia dignissimos.
-		|
-		.col-md-4
-			.card.bg-light.p-3
-				h4 Lorem ipsum dolor
-				|
-				p
-					| Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi, aperiam reprehenderit sunt deleniti nostrum totam libero nobis mollitia dignissimos.
+			hr
+			footer
+				p Mixtape &copy; 2018

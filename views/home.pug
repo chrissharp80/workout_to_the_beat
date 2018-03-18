@@ -1,0 +1,57 @@
+h1 #{title}
+block content
+	.jumbotron
+		.container
+			.row
+				.col-md-5
+					h1 Get your butt in gear!!!
+					p
+						| Make your playlist and get busy. Burn off those
+						| calories while listening to a custom playlist!!
+					p.space-under-elements
+						form#userInputForm()
+							.form-group
+								label(for='workout') How long do you want to workout?
+								br
+								select#workout.form-control-input-sm.space-under-elements(name='workout_time')
+									option 15
+									option 30
+									option 45
+									option 60
+								span.space-before-elements minutes
+							.form-group
+								label(for='warmup') How long is your warm-up?
+								br
+								select#warmup.form-control-input-sm.space-under-elements(name='warmup_time')
+									option 5
+									option 10
+									option 15
+									option 20
+								span.space-before-elements minutes
+							.form-group
+								label(for='inputFile') Upload your music file:
+								input#inputFile.form-control-file(name='file_to_input', type='file')
+							button#submitInfoForm.btn.btn-default.space-above-elements(type='submit') Submit
+				.col-md-7
+					img(src='images/cassette.jpg', alt='cassette')
+	.row
+		.col-md-4
+			.card.bg-light.p-3
+				h4 Lorem ipsum dolor
+				|
+				p
+					| Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi, aperiam reprehenderit sunt deleniti nostrum totam libero nobis mollitia dignissimos.
+		|
+		.col-md-4
+			.card.bg-light.p-3
+				h4 Lorem ipsum dolor
+				|
+				p
+					| Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi, aperiam reprehenderit sunt deleniti nostrum totam libero nobis mollitia dignissimos.
+		|
+		.col-md-4
+			.card.bg-light.p-3
+				h4 Lorem ipsum dolor
+				|
+				p
+					| Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi, aperiam reprehenderit sunt deleniti nostrum totam libero nobis mollitia dignissimos.
