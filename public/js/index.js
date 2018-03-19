@@ -1,44 +1,29 @@
 $(document).ready(function() {
-	// put initial JS call here
-	function showHome () {
-		$.get('/views/home', (view) => {
-			$('#main').html(view);
-		});
-	}
+	window.loadCorrectPage();
 
-	showHome();
-
+	/************************************************************************/
+	/*                          Button Handlers                             */
+	/************************************************************************/
 	$('#homeButton').on('click', () => {
-		$('li.nav-item').removeClass('active');
-		$('#homeNav').addClass('active');
-		$.get('/views/home', (view) => {
-			$('#main').html(view);
-		});
+		window.location = '/?location=home';
 	});
 
 	$('#playlistsButton').on('click', () => {
-		$('li.nav-item').removeClass('active');
-		$('#playlistsNav').addClass('active');
-		$.get('/views/playlists', (view) => {
-			$('#main').html(view);
-		});
+		window.location = '/?location=playlists';
 	});
 
 	$('#supportButton').on('click', () => {
-		$('li.nav-item').removeClass('active');
-		$('#supportNav').addClass('active');
-		$.get('/views/support', (view) => {
-			$('#main').html(view);
-		});
+		window.location = '/?location=support';
 	});
 
 	$('#contactButton').on('click', () => {
-		$('li.nav-item').removeClass('active');
-		$('#contactNav').addClass('active');
-		$.get('/views/contact', (view) => {
-			$('#main').html(view);
-		});
+		window.location = '/?location=contact';
 	});
+	/************************************************************************/
+	/*                         End Button Handlers                          */
+	/************************************************************************/
+
+
 
 	$('#submitInfoForm').on('click', (() => {
 		// const data = $('#userInputForm').text($('#workout').serialize());
